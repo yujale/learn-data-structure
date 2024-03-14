@@ -3,7 +3,7 @@
 数组是一种顺序存储的线性表，所有元素的内存地址都是连续的
 
 ```java
-int[] array = new int[]{11,22,33}
+int[] array = new int[]{11,22,33};
 ```
 
 ![](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/4a02ea7e00e64fa1afab4a87405b332d~tplv-k3u1fbpfcp-zoom-in-crop-mark:1512:0:0:0.awebp?)
@@ -323,7 +323,7 @@ public String toString() {
       if (i == size - 1) {
         sb.append(elements[i]);
       } else {
-        sb.append(elements[i] + ", ");
+        sb.append(elements[i]).append(", ");
       }
     }
     return sb.append("]").toString();
