@@ -1,4 +1,4 @@
-package data.structure.__01__algorithmcomplexity;
+package data.structure._01_algorithmcomplexity;
 
 /**
  * 算法复杂度
