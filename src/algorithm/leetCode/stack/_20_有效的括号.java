@@ -103,18 +103,18 @@ public class _20_有效的括号 {
         for (int i = 0; i < s.length(); i++) {
             char charAt = s.charAt(i);
             if (charAt == '(' || charAt == '{' || charAt == '[') {
-                // 如果字符是左括号，则将其压入栈中
+                // 如果字符是左符合，则将其压入栈中
                 stack.push(charAt);
             } else {
-                // 如果字符是右括号
+                // 如果字符是右符号
                 if (stack.isEmpty()) {
-                    // 如果栈为空，说明右括号没有匹配的左括号，返回 false
+                    // 如果栈为空，说明右括号没有匹配的左符号，返回 false
                     return false;
                 }
 
-                // 从栈顶弹出一个左括号
+                // 从栈顶弹出一个左符号
                 char left = stack.pop();
-                // 检查左右括号是否匹配，如果不匹配，返回 false
+                // 检查左右符合是否匹配，如果不匹配，返回 false
                 if (left == '(' && charAt != ')') {
                     return false;
                 }
