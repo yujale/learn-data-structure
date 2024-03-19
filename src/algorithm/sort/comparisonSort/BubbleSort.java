@@ -45,6 +45,9 @@ public class BubbleSort {
         endTime = System.currentTimeMillis();
         long optimizedPartTime = endTime - startTime;
         System.out.println("优化部分冒泡排序耗时: " + optimizedPartTime + " 毫秒");
+
+
+        printArray(array);
     }
 
     // 基本冒泡排序方法
